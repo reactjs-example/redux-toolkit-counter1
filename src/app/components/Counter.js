@@ -6,8 +6,8 @@ const Counter=()=>{
 
     const dispatch = useDispatch();
     const coin = useSelector((state)=>{
-        console.log(state[0].coin);
-        return state[0].coin
+        console.log(state.coinCounterReducer.coin);
+        return state.coinCounterReducer.coin
     });
     function incrementHandler(){
         console.log('value: ', coin);

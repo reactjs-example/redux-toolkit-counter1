@@ -7,5 +7,7 @@ const reducer = combineReducers([
 ])
 
 export const store = configureStore({
-    reducer:reducer
+    reducer:{
+        coinCounterReducer:  coinCounterSlice.reducer
+    }
 })
