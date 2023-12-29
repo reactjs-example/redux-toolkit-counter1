@@ -21,5 +21,5 @@ export const coinCounterSlice = createSlice({
 // action creators
 export const {increment, decrement} = coinCounterSlice.actions
 
-export default coinCounterSlice.reducer
+export const coinCounterReducer = coinCounterSlice.reducer
 
