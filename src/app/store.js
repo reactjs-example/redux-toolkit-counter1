@@ -11,3 +11,5 @@ export const store = configureStore({
         coinCounterReducer:  coinCounterReducer
     }
 })
+
+export const coinSelector = (state)=> state.coinCounterReducer.coin 

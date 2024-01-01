@@ -1,14 +1,12 @@
 import { useDispatch, useSelector } from "react-redux"
 import {  decrement, increment } from "../../features/mycounter/MyCounterSlice";
+import { coinSelector } from "../store";
 
 
 const Counter=()=>{
 
     const dispatch = useDispatch();
-    const coin = useSelector((state)=>{
-        console.log(state.coinCounterReducer.coin);
-        return state.coinCounterReducer.coin
-    });
+    const coin = useSelector(coinSelector);
     function incrementHandler(){
         console.log('value: ', coin);
         dispatch(increment())
